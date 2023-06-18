@@ -149,7 +149,7 @@ function App() {
             href="https://www.linkedin.com/in/gastonlangellotti"
             target="_blank" rel="noreferrer"
           >
-            <i class="fa-brands fa-linkedin fa-beat fa-2x"></i>
+            <i class="fa-brands fa-linkedin  fa-2x"></i>
             <span>/gastonlangellotti</span>
           </a>
         </li>
@@ -170,13 +170,13 @@ function App() {
         </li>
         <li>
           <a href="http://www.github.com/langello" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-square-github fa-beat fa-2x"></i>
+            <i class="fa-brands fa-square-github fa-2x"></i>
             <span>/langello</span>
           </a>
         </li>
         <li>
           <a href="mailto:gastonchavo@gmail.com">
-            <i class="fa-solid fa-envelope fa-beat fa-2x"></i>
+            <i class="fa-solid fa-envelope fa-2x"></i>
             <span>gastonchavo@gmail.com</span>
           </a>
         </li>
