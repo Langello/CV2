@@ -1,6 +1,7 @@
 import React from 'react';
 import {mostrarOcultarArticulo} from './index.js';
 const yoCV = process.env.PUBLIC_URL + '/yoCV.png';
+const imgBuscadorCanciones = process.env.PUBLIC_URL + '/musicBackground.jpg';
 
 function App() {
   const hacerClick = (articulo) => {
@@ -111,6 +112,25 @@ function App() {
         </article>
       </section>
 
+      <section id="proyectosSection">
+        <a href="#proyectosSection">
+          <h3 onClick={() => hacerClick('proyectos')}>
+            <span>Proyectos</span>
+            <i id="iconproyectos" class="fa-solid fa-arrow-down fa-beat"></i>
+          </h3>
+        </a>
+        <article id="proyectosArticle">
+          <ul>
+            <li>
+              <a href="https://langello.github.io/BuscadorCanciones/" target="_blank" rel="noreferrer">
+                <img src={imgBuscadorCanciones} alt="Proyecto Buscador de Caciones" />
+                <span>Buscador de Canciones</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </section>
+
       <section id="idiomasSection">
         <a href="#idiomasSection">
           <h3 onClick={() => hacerClick('idiomas')}>
@@ -141,6 +161,8 @@ function App() {
             </ul>
             </article>
       </section>
+
+
     </main>
     <footer>
       <ul>

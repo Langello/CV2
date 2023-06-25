@@ -71,7 +71,7 @@ main section h3 {
   color: white;
   cursor: pointer;
   padding: 1%;
-  font-size: 150%;
+  font-size: 170%;
   border-radius: 10px;
 }
 main section h3:hover {
@@ -133,7 +133,35 @@ footer ul li a:hover {
   transition: background-color 0.3s ease-in;
 }
 
-
+/*Sección proyectos*/
+#proyectosArticle ul{
+  display: flex;
+  margin-right: 3%;
+  justify-content: center;
+}
+#proyectosArticle li{
+  position: relative;
+  width: 25%;
+}
+#proyectosArticle img{
+ width: 100%;
+ height: 100%;
+ border-radius: 15%;
+}
+#proyectosArticle span{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  font-size: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+  text-shadow:-1px -1px 0 black, 
+                1px -1px 0 black,
+              -1px 1px 0 black,
+                1px 1px 0 black;
+}
 @media (max-width:1050px){
 
   body{
@@ -212,7 +240,9 @@ footer ul li a:hover {
       padding: 0.5%;
       font-size: 120%;
   }
-
+  #proyectosArticle span{
+    display: none;
+  }
 }
 @media (max-width: 560px){
 
