@@ -120,7 +120,7 @@ function App() {
         </a>
         <article id="idiomasArticle">
           <ul>
-            <li><b>Inglés:</b> A2+.</li>
+            <li><b>Inglés:</b> B1.</li>
           </ul>
         </article>
       </section>
