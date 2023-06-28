@@ -37,11 +37,11 @@ function App() {
         <article id="educacionArticle">
           <ul>
             <li>
-              <b>2022:</b> FullStack Desarrollo Web (JavaScript/Node JS) en Agencia a
+              <b>2022:</b> Full Stack Desarrollo Web (JavaScript/Node JS) en Agencia a
               lo largo de la vida (CABA).
             </li>
             <li>
-              <b>2022:</b> React.js en Agencia a lo largo de la vida (CABA).
+              <b>2022:</b> Especialización en React.js en Agencia a lo largo de la vida (CABA).
             </li>
             <li>
               <b>2021:</b> Full Stack Java en Agencia a lo largo de la vida (CABA).
