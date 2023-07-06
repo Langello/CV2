@@ -2,7 +2,7 @@ import React from 'react';
 import {mostrarOcultarArticulo} from './index.js';
 const yoCV = process.env.PUBLIC_URL + '/yoCV.png';
 const imgBuscadorCanciones = process.env.PUBLIC_URL + '/musicBackground.jpg';
-
+const imgMinijuegos = process.env.PUBLIC_URL + '/minijuegos.png';
 function App() {
   const hacerClick = (articulo) => {
     mostrarOcultarArticulo(articulo);
@@ -125,6 +125,12 @@ function App() {
               <a href="https://langello.github.io/BuscadorCanciones/" target="_blank" rel="noreferrer">
                 <img src={imgBuscadorCanciones} alt="Proyecto Buscador de Caciones" />
                 <span>Buscador de Canciones</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://langello.github.io/Minigames/" target="_blank" rel="noreferrer">
+                <img src={imgMinijuegos} alt="Proyecto de Minijuegos" />
+                <span>Minijuegos</span>
               </a>
             </li>
           </ul>
