@@ -19,7 +19,7 @@ function App() {
         </figure>
         <figcaption>
           <h1>Gastón Langellotti</h1>
-          <h2>Desarrollador de Software</h2>
+          <h2>Desarrollador Web</h2>
           <h2>Licenciado en Actividad Física y Deporte</h2>
           <h2>Profesor en Educación Física</h2>
         </figcaption>
