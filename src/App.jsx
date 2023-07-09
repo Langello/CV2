@@ -19,9 +19,7 @@ function App() {
         </figure>
         <figcaption>
           <h1>Gastón Langellotti</h1>
-          <h2>Desarrollador Web</h2>
-          <h2>Licenciado en Actividad Física y Deporte</h2>
-          <h2>Profesor en Educación Física</h2>
+          <h2>Desarrollador Web Front-end</h2>
         </figcaption>
       </section>
     </header>
@@ -61,18 +59,7 @@ function App() {
               Económico Producción, Gobierno de Ciudad de Buenos Aires).
             </li>
             <li>
-              <b>2023:</b> Marketing digital y Paid Media (Programa Digital Ad Degree).
-            </li>
-            <li>
               <b>2022 - Actualidad:</b> Inglés para programadores en Pearson English.
-            </li>
-            <li>
-              <b>2022:</b> Licenciado en actividad física y deporte. Universidad de
-              Flores (UFLO).
-            </li>
-            <li>
-              <b>2015:</b> Profesor de Educación Física. Instituto privado General San
-              Martín (GEBA).
             </li>
           </ul>
         </article>
@@ -86,12 +73,11 @@ function App() {
           </h3>
         </a>
         <article id="experienciaLaboralArticle">
-          <h4>2023 - Actualmente: Entrenamiento en Salesforce & Salesforce Industries | Rol XDGen</h4>
+          <h4>2023: Entrenamiento en Salesforce & Salesforce Industries | Rol XDGen</h4>
           <ul>
-            <li>Programa de entrenamiento en Salesforce dictado por LabsXD.</li>
-            <li> 
+            <li>Programa de entrenamiento en Salesforce dictado por LabsXD.
               <a href="https://trailblazer.me/id/langellotti" target="_blank" rel="noreferrer">
-                <span>Perfil de Trailblazer</span>
+                <span> Perfil de Trailblazer</span>
                 <i class="fa-regular fa-hand-pointer fa-rotate-270 fa-lg"></i>
               </a>
             </li>
@@ -99,15 +85,8 @@ function App() {
 
           <h4>2021 - Actualmente: Workana | Freelancer</h4>
           <ul>
-            <li>Data entry.</li>
+            <li>Data Entry: extraer datos técnicos de manuales automotrices en inglés y volcarlos de manera precisa en un programa designado.</li>
           </ul>
-
-          <h4>2022 - Actualmente: Escuela de natación "Deep Blue" | Socio y Coordinador</h4>
-          <ul>
-            <li>Supervisar, acompañar y dirigir el proceso de enseñanza.</li>
-            <li>Capacitación del personal docente.</li>
-          </ul>
-
           <h4>2016 - Actualmente: Colegio Piaget de San Isidro | Profesor</h4>
         </article>
       </section>
