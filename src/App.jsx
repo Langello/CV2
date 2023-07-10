@@ -3,6 +3,7 @@ import {mostrarOcultarArticulo} from './index.js';
 const yoCV = process.env.PUBLIC_URL + '/yoCV.png';
 const imgBuscadorCanciones = process.env.PUBLIC_URL + '/musicBackground.jpg';
 const imgMinijuegos = process.env.PUBLIC_URL + '/minijuegos.png';
+const imgToDoList = process.env.PUBLIC_URL + '/ToDoList.jpg';
 function App() {
   const hacerClick = (articulo) => {
     mostrarOcultarArticulo(articulo);
@@ -110,6 +111,12 @@ function App() {
               <a href="https://langello.github.io/Minigames/" target="_blank" rel="noreferrer">
                 <img src={imgMinijuegos} alt="Proyecto de Minijuegos" />
                 <span>Minijuegos</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://langello.github.io/To-Do/" target="_blank" rel="noreferrer">
+                <img src={imgToDoList} alt="Proyecto TodoList" />
+                <span>Lista de Tareas</span>
               </a>
             </li>
           </ul>
