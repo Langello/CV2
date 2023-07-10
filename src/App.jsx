@@ -140,9 +140,9 @@ function App() {
           <article id="sobreMiArticle">
             <ul>
               <li>Apasionado del aprendizaje continuo y en constante búsqueda de desafíos estimulantes para mi crecimiento profesional. Con experiencia en docencia y sólidas habilidades en Node.JS, Python, React.JS y JAVA, ofrezco soluciones técnicas de calidad.</li>
-              <li>Me destaco como un colaborador comprometido y confiable, capaz de trabajar de manera efectiva tanto en equipo como de forma autónoma. Mi enfoque se centra en alcanzar la excelencia y la eficiencia, invirtiendo tiempo y energía para lograr resultados sobresalientes.</li>
-              <li>Mi actitud adaptable y perseverante me impulsa a superar los desafíos con determinación. Estoy entusiasmado por encontrar oportunidades donde pueda aplicar mi experiencia y conocimientos para impulsar el éxito del equipo.</li>
-              <li>Espero con interés contribuir de manera significativa en su organización y aprovechar nuevas y emocionantes oportunidades.</li>
+              <li>Me destaco como un colaborador comprometido y responsable, capaz de trabajar de manera efectiva tanto en equipo como de forma autónoma. Mi enfoque se centra en alcanzar la excelencia y la eficiencia, invirtiendo tiempo y energía para lograr resultados sobresalientes.</li>
+              <li>Mi actitud adaptable y flexible a los cambios me impulsa a superar los desafíos con determinación. Estoy entusiasmado por encontrar oportunidades donde pueda aplicar mi experiencia y conocimientos para impulsar el éxito del equipo.</li>
+              <li>Espero con interés contribuir de manera significativa en su organización y aprovechar nuevas y emocionantes oportunidades. Además, puedo aportar valor a la compañía gracias a mi rápida capacidad de aprendizaje.</li>
             </ul>
             </article>
       </section>
