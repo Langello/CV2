@@ -32,7 +32,7 @@ function App() {
       
     <Accordion alwaysOpen>
     <Accordion.Item eventKey="0" className='acordion-item'>
-    <Accordion.Header ><span className='centrado'>Educación</span></Accordion.Header>
+    <a href='#educacion' id='educacion'><Accordion.Header ><span className='centrado'>Educación</span></Accordion.Header></a>
       <Accordion.Body>
           <ul>
             <li>
@@ -66,7 +66,7 @@ function App() {
         </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1" className='acordion-item'>
-        <Accordion.Header><span className='centrado'>Experiencia Laboral</span></Accordion.Header>
+        <a id='experienciaLaboral' href='#experienciaLaboral'><Accordion.Header><span className='centrado'>Experiencia Laboral</span></Accordion.Header></a>
         <Accordion.Body>
           <ul>
             <li><b>2023: Entrenamiento en Salesforce & Salesforce Industries | Rol XDGen</b></li>
@@ -83,7 +83,7 @@ function App() {
         </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2" className='acordion-item'>
-          <Accordion.Header><span className='centrado'>Proyectos</span></Accordion.Header>
+          <a id='proyectos' href='#proyectos' ><Accordion.Header><span className='centrado'>Proyectos</span></Accordion.Header></a>
           <Accordion.Body id='contenedorProyectos'>
           <ul>
             <li>
@@ -107,16 +107,8 @@ function App() {
           </ul>
           </Accordion.Body>
         </Accordion.Item >
-        <Accordion.Item eventKey="3" className='acordion-item'>
-          <Accordion.Header><span className='centrado'>Idiomas</span></Accordion.Header>
-          <Accordion.Body>
-          <ul>
-            <li><b>Inglés:</b> B1.</li>
-          </ul>
-          </Accordion.Body>
-        </Accordion.Item>
         <Accordion.Item eventKey="4" className='acordion-item'>
-          <Accordion.Header><span className='centrado'>Sobre Mí</span></Accordion.Header>
+          <a href='#sobreMi' id='sobreMi'><Accordion.Header><span className='centrado'>Sobre Mí</span></Accordion.Header></a>
           <Accordion.Body>
           <ul>
               <li>Apasionado del aprendizaje continuo y en constante búsqueda de desafíos estimulantes para mi crecimiento profesional. Con experiencia en docencia y sólidas habilidades en Node.JS, Python, React.JS y JAVA, ofrezco soluciones técnicas de calidad.</li>
@@ -126,12 +118,21 @@ function App() {
             </ul>
           </Accordion.Body>
         </Accordion.Item>
+        <Accordion.Item eventKey="3" className='acordion-item'>
+          <a href='#idiomas' id='idiomas' ><Accordion.Header><span className='centrado'>Idiomas</span></Accordion.Header></a>
+          <Accordion.Body>
+          <ul>
+            <li><b>Inglés:</b> B1.</li>
+          </ul>
+          </Accordion.Body>
+        </Accordion.Item>
+        
         </Accordion>
     </main>
     <footer>
       <ul>
         <li>
-          <a
+          <a 
             href="https://www.linkedin.com/in/gastonlangellotti"
             target="_blank" rel="noreferrer"
           >
@@ -169,7 +170,7 @@ function App() {
       </ul>
     </footer>
     </div>
-    
+  
 
   );
 }

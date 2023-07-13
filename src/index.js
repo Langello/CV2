@@ -16,6 +16,8 @@ window.addEventListener("focus" , () => {
     document.querySelector('link[rel="icon"]').href = contento;
 })
 
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <App />
