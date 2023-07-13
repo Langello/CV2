@@ -1,13 +1,17 @@
 import React from 'react';
-import {mostrarOcultarArticulo} from './index.js';
+import Accordion from 'react-bootstrap/Accordion';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
+
+
+
 const yoCV = process.env.PUBLIC_URL + '/yoCV.png';
 const imgBuscadorCanciones = process.env.PUBLIC_URL + '/musicBackground.jpg';
 const imgMinijuegos = process.env.PUBLIC_URL + '/minijuegos.png';
 const imgToDoList = process.env.PUBLIC_URL + '/ToDoList.jpg';
+
+
 function App() {
-  const hacerClick = (articulo) => {
-    mostrarOcultarArticulo(articulo);
-  };
   return (
 <div>
     <header>
@@ -24,16 +28,11 @@ function App() {
         </figcaption>
       </section>
     </header>
-
     <main>
-      <section id="educacionSection">
-        <a href="#educacionSection">
-          <h3 onClick={() => hacerClick('educacion')}>
-            <span>Educación</span>
-            <i id="iconeducacion" class="fa-solid fa-arrow-down fa-beat"></i>
-          </h3>
-        </a>
-        <article id="educacionArticle">
+    <Accordion alwaysOpen>
+    <Accordion.Item eventKey="0" className='acordion-item'>
+    <Accordion.Header ><span className='centrado'>Educación</span></Accordion.Header>
+      <Accordion.Body>
           <ul>
             <li>
               <b>2022:</b> Full Stack Desarrollo Web (JavaScript/Node JS) en Agencia a
@@ -63,43 +62,28 @@ function App() {
               <b>2022 - Actualidad:</b> Inglés para programadores en Pearson English.
             </li>
           </ul>
-        </article>
-      </section>
-
-      <section id="experienciaLaboralSection">
-        <a href="#experienciaLaboralSection">
-          <h3 onClick={() => hacerClick('experienciaLaboral')}>
-            <span>Experiencia Laboral</span>
-            <i id="iconexperienciaLaboral" class="fa-solid fa-arrow-down fa-beat"></i>
-          </h3>
-        </a>
-        <article id="experienciaLaboralArticle">
-          <h4>2023: Entrenamiento en Salesforce & Salesforce Industries | Rol XDGen</h4>
+        </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="1" className='acordion-item'>
+        <Accordion.Header><span className='centrado'>Experiencia Laboral</span></Accordion.Header>
+        <Accordion.Body>
           <ul>
+            <li><b>2023: Entrenamiento en Salesforce & Salesforce Industries | Rol XDGen</b></li>
             <li>Programa de entrenamiento en Salesforce dictado por LabsXD.
               <a href="https://trailblazer.me/id/langellotti" target="_blank" rel="noreferrer">
                 <span> Perfil de Trailblazer</span>
                 <i class="fa-regular fa-hand-pointer fa-rotate-270 fa-lg"></i>
               </a>
             </li>
-          </ul>
-
-          <h4>2021 - Actualmente: Workana | Freelancer</h4>
-          <ul>
+            <li><b>2021 - Actualmente: Workana | Freelancer</b></li>
             <li>Data Entry: extraer datos técnicos de manuales automotrices en inglés y volcarlos de manera precisa en un programa designado.</li>
+            <li><b>2016 - Actualmente: Colegio Piaget de San Isidro | Profesor</b></li>
           </ul>
-          <h4>2016 - Actualmente: Colegio Piaget de San Isidro | Profesor</h4>
-        </article>
-      </section>
-
-      <section id="proyectosSection">
-        <a href="#proyectosSection">
-          <h3 onClick={() => hacerClick('proyectos')}>
-            <span>Proyectos</span>
-            <i id="iconproyectos" class="fa-solid fa-arrow-down fa-beat"></i>
-          </h3>
-        </a>
-        <article id="proyectosArticle">
+        </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="2" className='acordion-item'>
+          <Accordion.Header><span className='centrado'>Proyectos</span></Accordion.Header>
+          <Accordion.Body id='contenedorProyectos'>
           <ul>
             <li>
               <a href="https://langello.github.io/BuscadorCanciones/" target="_blank" rel="noreferrer">
@@ -120,41 +104,28 @@ function App() {
               </a>
             </li>
           </ul>
-        </article>
-      </section>
-
-      <section id="idiomasSection">
-        <a href="#idiomasSection">
-          <h3 onClick={() => hacerClick('idiomas')}>
-            <span>Idiomas</span>
-            <i id="iconidiomas" class="fa-solid fa-arrow-down fa-beat"></i>
-          </h3>
-        </a>
-        <article id="idiomasArticle">
+          </Accordion.Body>
+        </Accordion.Item >
+        <Accordion.Item eventKey="3" className='acordion-item'>
+          <Accordion.Header><span className='centrado'>Idiomas</span></Accordion.Header>
+          <Accordion.Body>
           <ul>
             <li><b>Inglés:</b> B1.</li>
           </ul>
-        </article>
-      </section>
-
-      <section id="sobreMiSection">
-          <a href="#sobreMiSection">
-            <h3 onClick={() => hacerClick('sobreMi')}>
-              <span>Sobre Mí</span>
-              <i id="iconsobreMi" class="fa-solid fa-arrow-down fa-beat"></i>
-            </h3>
-          </a>
-          <article id="sobreMiArticle">
-            <ul>
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="4" className='acordion-item'>
+          <Accordion.Header><span className='centrado'>Sobre Mí</span></Accordion.Header>
+          <Accordion.Body>
+          <ul>
               <li>Apasionado del aprendizaje continuo y en constante búsqueda de desafíos estimulantes para mi crecimiento profesional. Con experiencia en docencia y sólidas habilidades en Node.JS, Python, React.JS y JAVA, ofrezco soluciones técnicas de calidad.</li>
               <li>Me destaco como un colaborador comprometido y responsable, capaz de trabajar de manera efectiva tanto en equipo como de forma autónoma. Mi enfoque se centra en alcanzar la excelencia y la eficiencia, invirtiendo tiempo y energía para lograr resultados sobresalientes.</li>
               <li>Mi actitud adaptable y flexible a los cambios me impulsa a superar los desafíos con determinación. Estoy entusiasmado por encontrar oportunidades donde pueda aplicar mi experiencia y conocimientos para impulsar el éxito del equipo.</li>
               <li>Espero con interés contribuir de manera significativa en su organización y aprovechar nuevas y emocionantes oportunidades. Además, puedo aportar valor a la compañía gracias a mi rápida capacidad de aprendizaje.</li>
             </ul>
-            </article>
-      </section>
-
-
+          </Accordion.Body>
+        </Accordion.Item>
+        </Accordion>
     </main>
     <footer>
       <ul>
