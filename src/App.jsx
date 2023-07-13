@@ -10,6 +10,8 @@ const imgBuscadorCanciones = process.env.PUBLIC_URL + '/musicBackground.jpg';
 const imgMinijuegos = process.env.PUBLIC_URL + '/minijuegos.png';
 const imgToDoList = process.env.PUBLIC_URL + '/ToDoList.jpg';
 
+
+//funcion para que al hacer click en un header la pantalla scrolle automaticamente
 function handleClick(eventKey) {
   const headerElement = document.querySelector(`#${eventKey}`);
   const headerRect = headerElement.getBoundingClientRect();
