@@ -337,4 +337,8 @@ footer ul li span{
   #contenedorProyectos span{
     display: inline;
   }
+  .accordion-button::after {
+    width: 20px;
+    height: 20px;
+  }
 }
