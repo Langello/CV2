@@ -10,8 +10,23 @@ const imgBuscadorCanciones = process.env.PUBLIC_URL + '/musicBackground.jpg';
 const imgMinijuegos = process.env.PUBLIC_URL + '/minijuegos.png';
 const imgToDoList = process.env.PUBLIC_URL + '/ToDoList.jpg';
 
+function handleClick(eventKey) {
+  const headerElement = document.querySelector(`#${eventKey}`);
+  const headerRect = headerElement.getBoundingClientRect();
+  const offset = headerRect.top + window.scrollY;
+  
+  const accordionItemElement = headerElement.closest('.acordion-item');
+  accordionItemElement.addEventListener('transitionend', () => {
+    window.scrollTo({ top: offset, behavior: 'smooth' });
+  }, { once: true });
+}
+
+
+
+
 
 function App() {
+  
   return (
 <div>
     <header>
@@ -31,8 +46,8 @@ function App() {
     <main>
       
     <Accordion alwaysOpen>
-    <Accordion.Item eventKey="0" className='acordion-item'>
-    <a href='#educacion' id='educacion'><Accordion.Header ><span className='centrado'>Educación</span></Accordion.Header></a>
+    <Accordion.Item eventKey="educacion" className='acordion-item'>
+    <Accordion.Header onClick={() => handleClick('educacion')}><span  id="educacion" className='centrado'>Educación</span></Accordion.Header>
       <Accordion.Body>
           <ul>
             <li>
@@ -65,8 +80,8 @@ function App() {
           </ul>
         </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="1" className='acordion-item'>
-        <a id='experienciaLaboral' href='#experienciaLaboral'><Accordion.Header><span className='centrado'>Experiencia Laboral</span></Accordion.Header></a>
+        <Accordion.Item eventKey="experiencia" className='acordion-item'>
+        <Accordion.Header onClick={() => handleClick('experiencia')}><span id='experiencia' className='centrado'>Experiencia Laboral</span></Accordion.Header>
         <Accordion.Body>
           <ul>
             <li><b>2023: Entrenamiento en Salesforce & Salesforce Industries | Rol XDGen</b></li>
@@ -82,8 +97,8 @@ function App() {
           </ul>
         </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="2" className='acordion-item'>
-          <a id='proyectos' href='#proyectos' ><Accordion.Header><span className='centrado'>Proyectos</span></Accordion.Header></a>
+        <Accordion.Item eventKey="proyectos" className='acordion-item'>
+          <Accordion.Header onClick={() => handleClick('proyectos')}><span id='proyectos' className='centrado'>Proyectos</span></Accordion.Header>
           <Accordion.Body id='contenedorProyectos'>
           <ul>
             <li>
@@ -107,8 +122,16 @@ function App() {
           </ul>
           </Accordion.Body>
         </Accordion.Item >
-        <Accordion.Item eventKey="4" className='acordion-item'>
-          <a href='#sobreMi' id='sobreMi'><Accordion.Header><span className='centrado'>Sobre Mí</span></Accordion.Header></a>
+        <Accordion.Item eventKey="idiomas" className='acordion-item'>
+          <Accordion.Header onClick={() => handleClick('idiomas')}><span id='idiomas' className='centrado'>Idiomas</span></Accordion.Header>
+          <Accordion.Body>
+          <ul>
+            <li><b>Inglés:</b> B1.</li>
+          </ul>
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="sobreMi" className='acordion-item'>
+          <Accordion.Header onClick={() => handleClick('sobreMi')}><span id='sobreMi' className='centrado'>Sobre Mí</span></Accordion.Header>
           <Accordion.Body>
           <ul>
               <li>Apasionado del aprendizaje continuo y en constante búsqueda de desafíos estimulantes para mi crecimiento profesional. Con experiencia en docencia y sólidas habilidades en Node.JS, Python, React.JS y JAVA, ofrezco soluciones técnicas de calidad.</li>
@@ -118,15 +141,6 @@ function App() {
             </ul>
           </Accordion.Body>
         </Accordion.Item>
-        <Accordion.Item eventKey="3" className='acordion-item'>
-          <a href='#idiomas' id='idiomas' ><Accordion.Header><span className='centrado'>Idiomas</span></Accordion.Header></a>
-          <Accordion.Body>
-          <ul>
-            <li><b>Inglés:</b> B1.</li>
-          </ul>
-          </Accordion.Body>
-        </Accordion.Item>
-        
         </Accordion>
     </main>
     <footer>
