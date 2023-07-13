@@ -119,6 +119,11 @@ footer ul li span{
   font-size: 80%;
   padding: 1%;
 }
+.accordion-button:not(.collapsed)::after {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/60/60643.png');
+  border-radius: 50%;
+}
+
 .accordion-button.collapsed {
   background-color: black;
   color: white;
@@ -137,8 +142,13 @@ footer ul li span{
   border-radius: 15px;
 }
 .accordion-button::after {
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
+  background-color: white;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/60/60643.png');
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: 120%;
 }
 
 /*Sección proyectos*/

@@ -29,6 +29,7 @@ function App() {
       </section>
     </header>
     <main>
+      
     <Accordion alwaysOpen>
     <Accordion.Item eventKey="0" className='acordion-item'>
     <Accordion.Header ><span className='centrado'>Educación</span></Accordion.Header>
