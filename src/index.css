@@ -101,9 +101,6 @@ footer ul li span{
   font-weight: bold;
   color: white;
 }
-.accordion-button{
-  background-color: blue;
-}
 .accordion-body{
   padding: 0%;
 }
@@ -120,12 +117,14 @@ footer ul li span{
   box-shadow: none;
   border-radius: 15px;
   font-size: 80%;
+  padding: 1%;
 }
 .accordion-button.collapsed {
   background-color: black;
   color: white;
   border-radius: 15px;
   font-size: 80%;
+  padding: 1%;
 }
 .accordion-item{
   border-style: none;
@@ -300,6 +299,19 @@ footer ul li span{
   main {
     padding-top: 1%;
     background-color:rgb(255, 255, 255);
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+    font-size: small;
+    text-align:start;
+  }
+
+  .accordion-button:not(.collapsed) {
+    padding: 2%;
+  }
+  .accordion-button.collapsed {
+    padding: 2%;
   }
 
   #contenedorProyectos ul {
