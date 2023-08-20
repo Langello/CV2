@@ -187,6 +187,15 @@ footer ul li span{
   text-align: center;
 }
 
+/*Seccion skills en dos columnas*/
+.dos-columnas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.dos-columnas li {
+  list-style:disc;
+}
 
 @media (max-width:1050px){
 

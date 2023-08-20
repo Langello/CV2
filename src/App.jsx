@@ -41,61 +41,59 @@ function App() {
         </figure>
         <figcaption>
           <h1>Gastón Langellotti</h1>
-          <h2>Desarrollador Web Front-end</h2>
+          <h2>Desarrollador de Software</h2>
         </figcaption>
       </section>
     </header>
     <main>
       
     <Accordion alwaysOpen>
+    <Accordion.Item eventKey="experiencia" className='acordion-item'>
+        <Accordion.Header onClick={() => handleClick('experiencia')}><span id='experiencia' className='centrado'>Experiencia Laboral</span></Accordion.Header>
+        <Accordion.Body>
+          <ul>
+            <li><b>2023 - Actualidad: Cliente particular | Desarrollador de Software</b></li>
+            <li>Desarrollo completo de un sistema predictor oceanográfico. </li>
+            <li><b>2023: Entrenamiento en Salesforce & Salesforce Industries | Rol XDGen</b></li>
+            <li>Programa de entrenamiento en Salesforce dictado por LabsXD.</li>
+            <li><b>2021 - Actualidad: Workana | Freelancer</b></li>
+            <li>Data Entry: Opinautos | Extracción de datos técnicos de manuales automotrices en inglés y volcarlos de manera precisa en un programa designado.</li>
+            <li>Data Entry: Software Shop | Manejo de datos de personal académico en universidades en Latinoamérica.</li>
+          </ul>
+        </Accordion.Body>
+        </Accordion.Item>
     <Accordion.Item eventKey="educacion" className='acordion-item'>
     <Accordion.Header onClick={() => handleClick('educacion')}><span  id="educacion" className='centrado'>Educación</span></Accordion.Header>
       <Accordion.Body>
           <ul>
             <li>
-              <b>2022:</b> Full Stack Desarrollo Web (JavaScript/Node JS) en Agencia a
-              lo largo de la vida (CABA).
+              <b>2023 - Actualidad:</b> Bootcamp de Desarrollo Web Avanzado, en la UTN, Facultad Regional de Buenos Aires.
             </li>
             <li>
-              <b>2022:</b> Especialización en React.js en Agencia a lo largo de la vida (CABA).
+              <b>2022:</b> Full Stack Desarrollo Web (JavaScript/Node JS), en Agencia a
+              lo largo de la vida.
             </li>
             <li>
-              <b>2021:</b> Full Stack Java en Agencia a lo largo de la vida (CABA).
+              <b>2022:</b> Especialización en React.js, en Agencia a lo largo de la vida.
             </li>
             <li>
-              <b>2023 - Actualidad:</b> Argentina programa 4.0 parte 2 (Ministerio de Economía).
+              <b>2021:</b> Full Stack Java, en Agencia a lo largo de la vida.
             </li>
             <li>
-              <b>2022:</b> Argentina programa 4.0 parte 1 (Ministerio de Economía).
+              <b>2023 - Actualidad:</b> Argentina programa 4.0 parte 2, en Ticmas.
             </li>
             <li>
-              <b>2022:</b> Programación 2 en Academia BA (Ministerio de Desarrollo
-              Económico Producción, Gobierno de Ciudad de Buenos Aires).
+              <b>2022:</b> Programación 2, en Academia BA.
             </li>
             <li>
-              <b>2022:</b> Ciencia de datos 2 en Academia BA (Ministerio de Desarrollo
-              Económico Producción, Gobierno de Ciudad de Buenos Aires).
+              <b>2022:</b> Ciencia de datos 2, en Academia BA.
             </li>
             <li>
-              <b>2022 - Actualidad:</b> Inglés para programadores en Pearson English.
+              <b>2022 - Actualidad:</b> Inglés para programadores, en Pearson English.
             </li>
-          </ul>
-        </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="experiencia" className='acordion-item'>
-        <Accordion.Header onClick={() => handleClick('experiencia')}><span id='experiencia' className='centrado'>Experiencia Laboral</span></Accordion.Header>
-        <Accordion.Body>
-          <ul>
-            <li><b>2023: Entrenamiento en Salesforce & Salesforce Industries | Rol XDGen</b></li>
-            <li>Programa de entrenamiento en Salesforce dictado por LabsXD.
-              <a href="https://trailblazer.me/id/langellotti" target="_blank" rel="noreferrer">
-                <span> Perfil de Trailblazer</span>
-                <i class="fa-regular fa-hand-pointer fa-rotate-270 fa-lg"></i>
-              </a>
+            <li>
+              <b>2023 - Actualidad:</b> Diseño UX/UI, en Agencia a lo largo de la vida.
             </li>
-            <li><b>2021 - Actualmente: Workana | Freelancer</b></li>
-            <li>Data Entry: extraer datos técnicos de manuales automotrices en inglés y volcarlos de manera precisa en un programa designado.</li>
-            <li><b>2016 - Actualmente: Colegio Piaget de San Isidro | Profesor</b></li>
           </ul>
         </Accordion.Body>
         </Accordion.Item>
@@ -133,14 +131,18 @@ function App() {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="sobreMi" className='acordion-item'>
-          <Accordion.Header onClick={() => handleClick('sobreMi')}><span id='sobreMi' className='centrado'>Sobre Mí</span></Accordion.Header>
+          <Accordion.Header onClick={() => handleClick('sobreMi')}><span id='sobreMi' className='centrado'>Skills</span></Accordion.Header>
           <Accordion.Body>
-          <ul>
-              <li>Apasionado del aprendizaje continuo y en constante búsqueda de desafíos estimulantes para mi crecimiento profesional. Con experiencia en docencia y sólidas habilidades en Node.JS, Python, React.JS y JAVA, ofrezco soluciones técnicas de calidad.</li>
-              <li>Me destaco como un colaborador comprometido y responsable, capaz de trabajar de manera efectiva tanto en equipo como de forma autónoma. Mi enfoque se centra en alcanzar la excelencia y la eficiencia, invirtiendo tiempo y energía para lograr resultados sobresalientes.</li>
-              <li>Mi actitud adaptable y flexible a los cambios me impulsa a superar los desafíos con determinación. Estoy entusiasmado por encontrar oportunidades donde pueda aplicar mi experiencia y conocimientos para impulsar el éxito del equipo.</li>
-              <li>Espero con interés contribuir de manera significativa en su organización y aprovechar nuevas y emocionantes oportunidades. Además, puedo aportar valor a la compañía gracias a mi rápida capacidad de aprendizaje.</li>
-            </ul>
+          <ul className='dos-columnas'>
+            <li>Desarrollo web frontend con React.js</li>
+            <li>Desarrollo web backend con Node.js</li>
+            <li>Versionamiento con Git y GitHub</li>
+            <li>Lenguajes de programación: JavaScript y Python</li>
+            <li>Frameworks: Bootstrap</li>
+            <li>Base de datos: MySQL</li>
+            <li>Despliegue en la nube: Githubpages</li>
+            <li>Metodologías ágiles: Kanban</li>
+          </ul>
           </Accordion.Body>
         </Accordion.Item>
         </Accordion>
