@@ -6,9 +6,9 @@ import './index.css';
 
 
 const yoCV = process.env.PUBLIC_URL + '/yoCV.png';
-const imgBuscadorCanciones = process.env.PUBLIC_URL + '/musicBackground.jpg';
-const imgMinijuegos = process.env.PUBLIC_URL + '/minijuegos.png';
-const imgToDoList = process.env.PUBLIC_URL + '/ToDoList.jpg';
+// const imgBuscadorCanciones = process.env.PUBLIC_URL + '/musicBackground.jpg';
+// const imgMinijuegos = process.env.PUBLIC_URL + '/minijuegos.png';
+// const imgToDoList = process.env.PUBLIC_URL + '/ToDoList.jpg';
 
 
 //funcion para que al hacer click en un header la pantalla scrolle automaticamente
@@ -48,6 +48,10 @@ function App() {
     <main>
       
     <Accordion alwaysOpen>
+      <ul>
+      <li>Profesional proactivo con experiencia en la creación y personalización de soluciones a medida.</li>
+      <li>Trabajo de forma independiente, respondiendo a la demanda  del cliente.</li>
+      </ul>
     <Accordion.Item eventKey="experiencia" className='acordion-item'>
         <Accordion.Header onClick={() => handleClick('experiencia')}><span id='experiencia' className='centrado'>Experiencia Laboral</span></Accordion.Header>
         <Accordion.Body>
@@ -97,6 +101,7 @@ function App() {
           </ul>
         </Accordion.Body>
         </Accordion.Item>
+        {/*Proyectos
         <Accordion.Item eventKey="proyectos" className='acordion-item'>
           <Accordion.Header onClick={() => handleClick('proyectos')}><span id='proyectos' className='centrado'>Proyectos</span></Accordion.Header>
           <Accordion.Body id='contenedorProyectos'>
@@ -122,6 +127,7 @@ function App() {
           </ul>
           </Accordion.Body>
         </Accordion.Item >
+        */}
         <Accordion.Item eventKey="idiomas" className='acordion-item'>
           <Accordion.Header onClick={() => handleClick('idiomas')}><span id='idiomas' className='centrado'>Idiomas</span></Accordion.Header>
           <Accordion.Body>
