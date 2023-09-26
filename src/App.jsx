@@ -50,7 +50,7 @@ function App() {
     <Accordion alwaysOpen>
       <ul>
       <li>Profesional proactivo con experiencia en la creación y personalización de soluciones a medida.</li>
-      <li>Trabajo de forma independiente, respondiendo a la demanda  del cliente.</li>
+      <li>Trabajo de forma independiente, respondiendo a los requerimientos del cliente.</li>
       </ul>
     <Accordion.Item eventKey="experiencia" className='acordion-item'>
         <Accordion.Header onClick={() => handleClick('experiencia')}><span id='experiencia' className='centrado'>Experiencia Laboral</span></Accordion.Header>
@@ -84,7 +84,7 @@ function App() {
               <b>2021:</b> Full Stack Java, en Agencia a lo largo de la vida.
             </li>
             <li>
-              <b>2023 - Actualidad:</b> Argentina programa 4.0 parte 2, en Ticmas.
+              <b>2023:</b> Argentina programa 4.0 parte 2, en Ticmas.
             </li>
             <li>
               <b>2022:</b> Programación 2, en Academia BA.
@@ -93,7 +93,7 @@ function App() {
               <b>2022:</b> Ciencia de datos 2, en Academia BA.
             </li>
             <li>
-              <b>2022 - Actualidad:</b> Inglés para programadores, en Pearson English.
+              <b>2022:</b> Inglés para programadores, en Pearson English.
             </li>
             <li>
               <b>2023 - Actualidad:</b> Diseño UX/UI, en Agencia a lo largo de la vida.
