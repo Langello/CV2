@@ -351,4 +351,7 @@ footer ul li span{
     width: 20px;
     height: 20px;
   }
+  .dos-columnas{
+    padding-left: 5%;
+  }
 }

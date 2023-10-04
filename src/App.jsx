@@ -50,7 +50,7 @@ function App() {
     <Accordion alwaysOpen>
       <ul>
       <li>Profesional proactivo con experiencia en la creación y personalización de soluciones a medida.</li>
-      <li>Trabajo de forma independiente, respondiendo a los requerimientos del cliente.</li>
+      <li>Trabajo en equipo respondiendo a los requerimientos del cliente.</li>
       </ul>
     <Accordion.Item eventKey="experiencia" className='acordion-item'>
         <Accordion.Header onClick={() => handleClick('experiencia')}><span id='experiencia' className='centrado'>Experiencia Laboral</span></Accordion.Header>
