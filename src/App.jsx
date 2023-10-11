@@ -57,7 +57,7 @@ function App() {
         <Accordion.Body>
           <ul>
             <li><b>2023 - Actualidad: Cliente particular | Desarrollador de Software</b></li>
-            <li>Desarrollo completo de un sistema predictor oceanográfico. </li>
+            <li>Desarrollo completo de un sistema predictor oceanográfico (Python). </li>
             <li><b>2023: Entrenamiento en Salesforce & Salesforce Industries | Rol XDGen</b></li>
             <li>Programa de entrenamiento en Salesforce dictado por LabsXD.</li>
             <li><b>2021 - Actualidad: Workana | Freelancer</b></li>
