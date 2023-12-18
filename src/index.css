@@ -57,6 +57,12 @@ header section figcaption h1 {
 header section figcaption h2 {
   font-size: 200%;
   text-align: center;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+header section figcaption p {
+  font-size: 150%;
+  text-align: center;
   font-weight: bold;
 }
 main {
@@ -105,6 +111,7 @@ footer ul li span{
 .accordion-body{
   padding: 0%;
 }
+
 .accordion-button:focus {
   z-index: 3;
   border: none;
