@@ -3,11 +3,18 @@ import { motion } from 'framer-motion';
 
 const PrintButton = ({ className = '' }) => {
   const handlePrint = () => {
-    // Crear una ventana nueva para la versión de impresión
-    const printWindow = window.open('', '_blank');
-    
-    // Crear el HTML optimizado para impresión
-    const printHTML = `
+    try {
+      // Crear una ventana nueva para la versión de impresión
+      const printWindow = window.open('', '_blank');
+      
+      // Verificar si la ventana se abrió correctamente
+      if (!printWindow) {
+        alert('Por favor, permite ventanas emergentes para imprimir el CV');
+        return;
+      }
+      
+      // Crear el HTML optimizado para impresión
+      const printHTML = `
       <!DOCTYPE html>
       <html lang="es">
       <head>
