@@ -11,6 +11,7 @@ export { default as ModernCard } from './ModernCard';
 export { default as ThemeToggle } from './ThemeToggle';
 export { default as ThemeCustomizer } from './ThemeCustomizer';
 export { default as AccessibilityEnhancer } from './AccessibilityEnhancer';
+export { default as PrintButton } from './PrintButton';
 
 // Micro-interacciones
 export * from './MicroInteractions';

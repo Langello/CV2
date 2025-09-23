@@ -3,7 +3,7 @@ import { HelmetProvider } from "react-helmet-async";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/modern.css";
 import "./styles/themes.css";
-import { Header, Main, Footer, SEO, Preloader, ThemeToggle, AccessibilityEnhancer } from "./components";
+import { Header, Main, Footer, SEO, Preloader, ThemeToggle, AccessibilityEnhancer, PrintButton } from "./components";
 import { useScrollToSection, useFaviconEffect, useServiceWorker, usePreloader } from "./hooks";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
@@ -21,6 +21,7 @@ function App() {
         <div className="app-container">
           <ThemeToggle />
           <AccessibilityEnhancer />
+          <PrintButton />
           <Header />
           <Main handleClick={handleClick} />
           <Footer />
