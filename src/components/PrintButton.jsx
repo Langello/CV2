@@ -246,15 +246,32 @@ const PrintButton = ({ className = '' }) => {
       </html>
     `;
     
-    // Escribir el contenido en la ventana
-    printWindow.document.write(printHTML);
-    printWindow.document.close();
-    
-    // Esperar a que se cargue y luego imprimir
-    printWindow.onload = () => {
-      printWindow.print();
-      printWindow.close();
-    };
+      // Escribir el contenido en la ventana
+      printWindow.document.open();
+      printWindow.document.documentElement.innerHTML = printHTML;
+      printWindow.document.close();
+      
+      // Esperar a que se cargue y luego imprimir
+      printWindow.onload = () => {
+        setTimeout(() => {
+          printWindow.print();
+          // No cerrar automáticamente en móviles para dar tiempo al usuario
+          if (window.innerWidth > 768) {
+            printWindow.close();
+          }
+        }, 500);
+      };
+      
+      // Manejar errores de carga
+      printWindow.onerror = () => {
+        alert('Error al cargar la versión de impresión. Intenta nuevamente.');
+        printWindow.close();
+      };
+      
+    } catch (error) {
+      console.error('Error al imprimir:', error);
+      alert('Error al imprimir el CV. Por favor, intenta nuevamente.');
+    }
   };
 
   return (
