@@ -1,7 +1,8 @@
 import React from "react";
+import { HelmetProvider } from "react-helmet-async";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import { Header, Main, Footer } from "./components";
+import { Header, Main, Footer, SEO } from "./components";
 import { useScrollToSection, useFaviconEffect } from "./hooks";
 
 function App() {
@@ -9,11 +10,14 @@ function App() {
   useFaviconEffect();
 
   return (
-    <div>
-      <Header />
-      <Main handleClick={handleClick} />
-      <Footer />
-    </div>
+    <HelmetProvider>
+      <SEO />
+      <div>
+        <Header />
+        <Main handleClick={handleClick} />
+        <Footer />
+      </div>
+    </HelmetProvider>
   );
 }
 
