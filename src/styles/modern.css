@@ -566,7 +566,7 @@ footer ul li a:hover i {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: var(--space-sm);
+    gap: var(--space-md);
     max-width: 100%;
   }
 
@@ -611,7 +611,7 @@ footer ul li a:hover i {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: var(--space-xs);
+    gap: var(--space-sm);
   }
 
   footer ul li a {
