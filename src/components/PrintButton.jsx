@@ -261,22 +261,18 @@ const PrintButton = ({ className = '' }) => {
       printWindow.onload = () => {
         setTimeout(() => {
           if (isMobile) {
-            // En móviles, mostrar mensaje y no cerrar automáticamente
+            // En móviles, mostrar mensaje con botón aceptar
             const message = document.createElement('div');
             message.innerHTML = `
-              <div style="position: fixed; top: 10px; left: 10px; right: 10px; background: #007bff; color: white; padding: 10px; border-radius: 5px; z-index: 9999; text-align: center;">
+              <div style="position: fixed; top: 10px; left: 10px; right: 10px; background: #007bff; color: white; padding: 15px; border-radius: 8px; z-index: 9999; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
                 <strong>📱 Versión para imprimir</strong><br>
-                Usa el menú "Compartir" → "Imprimir" de tu navegador
+                Usa el menú "Imprimir" de tu navegador<br><br>
+                <button onclick="this.parentElement.parentElement.remove()" style="background: white; color: #007bff; border: none; padding: 8px 16px; border-radius: 4px; font-weight: bold; cursor: pointer;">
+                  Entendido
+                </button>
               </div>
             `;
             printWindow.document.body.appendChild(message);
-            
-            // Remover el mensaje después de 5 segundos
-            setTimeout(() => {
-              if (message.parentNode) {
-                message.parentNode.removeChild(message);
-              }
-            }, 5000);
           } else {
             // En desktop, comportamiento normal
             printWindow.print();
