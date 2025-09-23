@@ -4,12 +4,18 @@ import { motion } from 'framer-motion';
 const PrintButton = ({ className = '' }) => {
   const handlePrint = () => {
     try {
+      const isMobile = window.innerWidth <= 768;
+      
       // Crear una ventana nueva para la versión de impresión
       const printWindow = window.open('', '_blank');
       
       // Verificar si la ventana se abrió correctamente
       if (!printWindow) {
-        alert('Por favor, permite ventanas emergentes para imprimir el CV');
+        if (isMobile) {
+          alert('No se pudo abrir la ventana. Usa el menú "Compartir" de tu navegador para imprimir.');
+        } else {
+          alert('Por favor, permite ventanas emergentes para imprimir el CV');
+        }
         return;
       }
       
@@ -248,15 +254,32 @@ const PrintButton = ({ className = '' }) => {
     
       // Escribir el contenido en la ventana
       printWindow.document.open();
-      printWindow.document.documentElement.innerHTML = printHTML;
+      printWindow.document.write(printHTML);
       printWindow.document.close();
       
       // Esperar a que se cargue y luego imprimir
       printWindow.onload = () => {
         setTimeout(() => {
-          printWindow.print();
-          // No cerrar automáticamente en móviles para dar tiempo al usuario
-          if (window.innerWidth > 768) {
+          if (isMobile) {
+            // En móviles, mostrar mensaje y no cerrar automáticamente
+            const message = document.createElement('div');
+            message.innerHTML = `
+              <div style="position: fixed; top: 10px; left: 10px; right: 10px; background: #007bff; color: white; padding: 10px; border-radius: 5px; z-index: 9999; text-align: center;">
+                <strong>📱 Versión para imprimir</strong><br>
+                Usa el menú "Compartir" → "Imprimir" de tu navegador
+              </div>
+            `;
+            printWindow.document.body.appendChild(message);
+            
+            // Remover el mensaje después de 5 segundos
+            setTimeout(() => {
+              if (message.parentNode) {
+                message.parentNode.removeChild(message);
+              }
+            }, 5000);
+          } else {
+            // En desktop, comportamiento normal
+            printWindow.print();
             printWindow.close();
           }
         }, 500);
