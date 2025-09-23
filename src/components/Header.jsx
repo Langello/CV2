@@ -7,7 +7,11 @@ const Header = () => {
     <header>
       <section>
         <figure>
-          <img src={yoCV} alt="retrato de Gastón Langellotti" />
+          <img 
+            src={yoCV} 
+            alt="retrato de Gastón Langellotti" 
+            loading="eager"
+          />
         </figure>
         <figcaption>
           <h1>Gastón Langellotti</h1>
