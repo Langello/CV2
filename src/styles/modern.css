@@ -227,7 +227,7 @@ header section figcaption p {
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--space-2xl) var(--space-xl);
+  padding: var(--space-2xl) var(--space-xl) var(--space-md);
   position: relative;
   z-index: 5;
 }
@@ -402,10 +402,8 @@ main {
 
 /* Footer moderno */
 footer {
-  background: var(--color-bg-secondary);
   color: var(--color-text-primary);
-  padding: var(--space-2xl) var(--space-xl);
-  margin-top: var(--space-3xl);
+  padding: var(--space-sm);
   position: relative;
   overflow: hidden;
   border-top: 1px solid var(--color-border);
@@ -564,8 +562,26 @@ footer ul li a:hover i {
   }
 
   footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    max-width: 100%;
+  }
+
+  footer ul li a {
+    padding: var(--space-sm);
+    font-size: 0.875rem;
     flex-direction: column;
-    gap: var(--space-md);
+    text-align: center;
+    gap: var(--space-xs);
+    width: auto;
+    min-width: auto;
+  }
+
+  footer ul li a i {
+    font-size: 1.25rem;
   }
 
   footer ul li a span {
@@ -588,6 +604,29 @@ footer ul li a:hover i {
 
   .accordion-body {
     padding: var(--space-md);
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+  }
+
+  footer ul li a {
+    padding: var(--space-xs);
+    font-size: 0.75rem;
+    width: auto;
+    min-width: auto;
+  }
+
+  footer ul li a i {
+    font-size: 1rem;
+  }
+
+  footer ul li a span {
+    display: none;
   }
 }
 
