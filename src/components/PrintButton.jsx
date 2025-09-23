@@ -264,10 +264,10 @@ const PrintButton = ({ className = '' }) => {
             // En móviles, mostrar mensaje con botón aceptar
             const message = document.createElement('div');
             message.innerHTML = `
-              <div style="position: fixed; top: 10px; left: 10px; right: 10px; background: #007bff; color: white; padding: 15px; border-radius: 8px; z-index: 9999; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+              <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 12px; z-index: 9999; text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,0.4); max-width: 90%; width: 300px;">
                 <strong>📱 Versión para imprimir</strong><br>
-                Usa el menú "Imprimir" de tu navegador<br><br>
-                <button onclick="this.parentElement.parentElement.remove()" style="background: white; color: #007bff; border: none; padding: 8px 16px; border-radius: 4px; font-weight: bold; cursor: pointer;">
+                Usa el menú "Compartir" → "Imprimir" de tu navegador<br><br>
+                <button onclick="this.parentElement.parentElement.remove()" style="background: white; color: #667eea; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
                   Entendido
                 </button>
               </div>
