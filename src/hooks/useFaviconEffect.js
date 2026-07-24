@@ -7,7 +7,7 @@ export const useFaviconEffect = () => {
     const titulo = document.title;
 
     const handleBlur = () => {
-      document.title = "Vuelve";
+      document.title = "Volve";
       const favicon = document.querySelector('link[rel="icon"]');
       if (favicon) {
         favicon.href = triste;

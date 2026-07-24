@@ -11,15 +11,15 @@ const Skills = ({ handleClick }) => {
       </Accordion.Header>
       <Accordion.Body>
         <ul className="dos-columnas">
-          <li>Desarrollo web frontend con Angular</li>
-          <li>Desarrollo web backend con Node.js (TypeScript)</li>
-          <li>Base de datos con MySQL y MongoDB</li>
+          <li>Frontend con Angular</li>
+          <li>Backend con Node.js y Express (TypeScript)</li>
+          <li>Bases de datos: MongoDB y MySQL</li>
+          <li>JavaScript / TypeScript</li>
           <li>Versionamiento con Git, GitHub y GitLab</li>
-          <li>Lenguaje de programación: JavaScript</li>
           <li>Prototipado y diseño: Figma</li>
-          <li>Despliegue en la nube: Vercel</li>
+          <li>Despliegue: Vercel y Railway</li>
           <li>
-            Herramientas de administración de proyectos: Trello, Slack, Jira
+            Gestión de proyectos: Trello, Slack, Jira
           </li>
         </ul>
       </Accordion.Body>

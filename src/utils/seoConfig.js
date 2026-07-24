@@ -8,20 +8,21 @@ export const SEO_CONFIG = {
   
   // Meta tags por defecto
   defaultTitle: "Gastón Langellotti - Desarrollador Web Full Stack | CV Profesional",
-  defaultDescription: "Desarrollador Web Full Stack con experiencia en React, Node.js, Angular y TypeScript. Especializado en desarrollo de aplicaciones web modernas y sistemas meteorológicos en tiempo real.",
+  defaultDescription: "Desarrollador Full Stack con Angular, Node.js, Express y MongoDB. Productos web de punta a punta: consumo colaborativo, datos en tiempo real, pagos y gestión de eventos.",
   
   // Keywords principales
   keywords: [
     "desarrollador web",
     "full stack",
-    "react",
     "node.js",
+    "express",
     "angular",
     "typescript",
     "javascript",
     "mysql",
     "mongodb",
     "vercel",
+    "railway",
     "gastón langellotti",
     "cv",
     "curriculum vitae",
@@ -30,7 +31,9 @@ export const SEO_CONFIG = {
     "desarrollador backend",
     "desarrollo web argentina",
     "freelancer",
-    "desarrollador freelance"
+    "desarrollador freelance",
+    "compraviva",
+    "dedo.top"
   ],
   
   // Información de contacto
@@ -52,36 +55,46 @@ export const SEO_CONFIG = {
   // Empresas donde trabaja
   companies: [
     {
+      name: "CompraViva",
+      url: "https://www.compraviva.ar",
+      description: "Plataforma de consumo colaborativo"
+    },
+    {
       name: "MetOcean",
       url: "http://www.puertoquequenmetocean.com",
       description: "Sistema meteorológico en tiempo real"
     },
     {
-      name: "Groween",
-      url: "https://www.groween.mx",
-      description: "Plataforma de renta de ropa"
+      name: "Dedo.top®",
+      url: "https://www.dedo.top",
+      description: "Viajes compartidos, QR y check-in"
     },
     {
-      name: "Dedo.Top",
-      url: "https://www.dedo.top",
-      description: "Plataforma para compartir viajes"
+      name: "El Chañar",
+      url: "https://www.chaniar.com.ar",
+      description: "Apart y cabañas en Villa General Belgrano"
+    },
+    {
+      name: "Groween",
+      url: "https://groween-web.vercel.app/",
+      description: "Plataforma de renta de ropa infantil"
     }
   ],
   
   // Habilidades técnicas
   skills: [
-    "React",
     "Angular",
     "Node.js",
+    "Express",
     "TypeScript",
     "JavaScript",
-    "MySQL",
     "MongoDB",
+    "MySQL",
     "Git",
     "GitHub",
     "Figma",
     "Vercel",
-    "Bootstrap"
+    "Railway"
   ]
 };
 

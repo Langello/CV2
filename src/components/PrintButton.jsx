@@ -173,28 +173,33 @@ const PrintButton = ({ className = '' }) => {
         <div class="print-container">
           <div class="print-header">
             <h1>Gastón Langellotti</h1>
-            <h2>Desarrollador web</h2>
-            <p>Profesional proactivo con experiencia. Trabajo freelance respondiendo a los requerimientos del cliente.</p>
+            <h2>Desarrollador Full Stack</h2>
+            <p><b>Dedo.top®</b> — Fundador</p>
+            <p>Freelance. Construyo productos web de punta a punta: desde plataformas de consumo colaborativo y datos en tiempo real hasta pagos, check-in y gestión de eventos.</p>
           </div>
           
           <div class="print-section">
             <h3>Experiencia Laboral</h3>
             <ul>
+              <li><b>2025 - Actualidad: CompraViva | Desarrollador Full Stack principal</b></li>
+              <li>Desarrollo y mantenimiento de <a href="https://www.compraviva.ar" target="_blank"><b>www.compraviva.ar</b></a>, plataforma de consumo colaborativo para pedidos de alimentos agroecológicos y gestión de nodos de entrega.</li>
+              <li>Responsable del producto de punta a punta: frontend, backend y evolutivo continuo según las necesidades del negocio.</li>
+
               <li><b>2024 - Actualidad: MetOcean | Desarrollador Full Stack</b></li>
               <li>Desarrollo completo de la web <a href="http://www.puertoquequenmetocean.com" target="_blank"><b>www.puertoquequenmetocean.com</b></a>, que muestra datos meteorológicos en tiempo real del puerto (olas, viento y marea).</li>
               <li>Instalación de servidor físico en el puerto y mantenimiento continuo de la plataforma.</li>
               <li>Desarrollo del backend y frontend completos.</li>
-              
-              <li><b>2024 - Actualidad: Groween | Desarrollador Full Stack</b></li>
-              <li>Desarrollo completo de la web <a href="https://www.groween.mx" target="_blank"><b>www.groween.mx</b></a>, plataforma de renta de ropa de México.</li>
-              <li>Implementación de login, envío de emails y pasarela de pagos con PayPal.</li>
-              <li>Gestión de stock mediante un panel de administración para seguimiento de prendas y órdenes.</li>
-              
-              <li><b>2024 - Actualidad: Dedo.Top | Desarrollador Full Stack</b></li>
-              <li>Desarrollo completo de la web <a href="https://www.dedo.top" target="_blank"><b>www.dedo.top</b></a>, plataforma para compartir viajes en Argentina.</li>
-              <li>Implementación de sistema de publicación y búsqueda de viajes con notificaciones y alertas.</li>
-              <li>Integración de pasarela de pagos para suscripciones premium.</li>
-              
+
+              <li><b>2024 - Actualidad: Dedo.top® | Fundador y Desarrollador Full Stack</b></li>
+              <li>Desarrollo del ecosistema <a href="https://www.dedo.top" target="_blank"><b>Dedo.top®</b></a>, con tres productos: viajes compartidos, QR para entradas de eventos y check-in.</li>
+
+              <li><b>2025 - Actualidad: El Chañar | Desarrollador Full Stack</b></li>
+              <li>Desarrollo y mantenimiento de <a href="https://www.chaniar.com.ar" target="_blank"><b>www.chaniar.com.ar</b></a>, sitio web de apart y cabañas en Villa General Belgrano con reserva directa.</li>
+
+              <li><b>2024 - 2025: Groween | Desarrollador Full Stack</b></li>
+              <li>Desarrollo completo de <a href="https://groween-web.vercel.app/" target="_blank"><b>groween-web.vercel.app</b></a>, plataforma de renta de ropa infantil en México.</li>
+              <li>Implementación de login, envío de emails, PayPal y panel de administración de stock.</li>
+
               <li><b>2023 - Actualidad: Cliente particular | Desarrollador de Software</b></li>
               <li>Desarrollo completo de un sistema predictor de marea para el uso interno del puerto.</li>
             </ul>
@@ -225,16 +230,16 @@ const PrintButton = ({ className = '' }) => {
             <h3>Habilidades</h3>
             <div class="two-columns">
               <ul>
-                <li>Desarrollo web frontend con Angular</li>
-                <li>Desarrollo web backend con Node.js (TypeScript)</li>
-                <li>Base de datos con MySQL y MongoDB</li>
-                <li>Versionamiento con Git, GitHub y GitLab</li>
+                <li>Frontend con Angular</li>
+                <li>Backend con Node.js y Express (TypeScript)</li>
+                <li>Bases de datos: MongoDB y MySQL</li>
+                <li>JavaScript / TypeScript</li>
               </ul>
               <ul>
-                <li>Lenguaje de programación: JavaScript</li>
+                <li>Versionamiento con Git, GitHub y GitLab</li>
                 <li>Prototipado y diseño: Figma</li>
-                <li>Despliegue en la nube: Vercel</li>
-                <li>Herramientas de administración de proyectos: Trello, Slack, Jira</li>
+                <li>Despliegue: Vercel y Railway</li>
+                <li>Gestión de proyectos: Trello, Slack, Jira</li>
               </ul>
             </div>
           </div>

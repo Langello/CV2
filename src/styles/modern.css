@@ -210,9 +210,45 @@ header section figcaption h2 {
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--color-text-secondary);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
   letter-spacing: 0.025em;
   transition: color 0.3s ease;
+}
+
+.brand-dedo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: var(--space-lg);
+  text-decoration: none;
+  color: var(--color-text-primary);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.brand-dedo:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.brand-dedo img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.35rem;
+  object-fit: contain;
+}
+
+.brand-dedo__name {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1;
+}
+
+/* Mismo criterio que dedo-fe logo.component.css */
+.logo-registered {
+  font-size: 0.6em;
+  vertical-align: top;
 }
 
 header section figcaption p {
