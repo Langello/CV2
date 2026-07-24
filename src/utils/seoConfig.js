@@ -1,6 +1,6 @@
 export const SEO_CONFIG = {
   siteName: "CV Gastón Langellotti",
-  siteUrl: "https://langello.github.io/CV2/",
+  siteUrl: "https://cv.dedo.top/",
   defaultImage: "/yoCV.webp",
   author: "Gastón Langellotti",
   language: "es",
