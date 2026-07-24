@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 const PrintButton = ({ className = '' }) => {
   const handlePrint = () => {
@@ -299,28 +298,25 @@ const PrintButton = ({ className = '' }) => {
   };
 
   return (
-    <motion.button
-      className={`print-button ${className}`}
+    <button
+      type="button"
+      className={`print-button ${className}`.trim()}
       onClick={handlePrint}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      transition={{ duration: 0.2, ease: "easeInOut" }}
       aria-label="Imprimir CV"
       title="Imprimir CV"
     >
-      <motion.svg 
-        width="20" 
-        height="20" 
-        viewBox="0 0 24 24" 
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
         fill="currentColor"
-        whileHover={{ rotate: 5 }}
-        transition={{ duration: 0.2, ease: "easeInOut" }}
+        aria-hidden="true"
       >
         <path d="M18 3H6v4H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h2v2c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-2h2c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2h-2V3zM8 5h8v2H8V5zm8 12.5c0 .28-.22.5-.5.5s-.5-.22-.5-.5V14H9v3.5c0 .28-.22.5-.5.5S8 17.78 8 17.5V14H6V9h12v5h-2v3.5z"/>
         <circle cx="18" cy="11" r="1"/>
-      </motion.svg>
+      </svg>
       <span>Imprimir CV</span>
-    </motion.button>
+    </button>
   );
 };
 

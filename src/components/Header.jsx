@@ -1,18 +1,24 @@
 import React from "react";
 
 const Header = () => {
-  const yoCV = process.env.PUBLIC_URL + "/yoCV.png";
-  const dedoLogo = process.env.PUBLIC_URL + "/brands/dedo-top.svg";
+  const yoCV = process.env.PUBLIC_URL + "/yoCV";
+  const dedoLogo = process.env.PUBLIC_URL + "/brands/dedo-top";
 
   return (
     <header>
       <section>
         <figure>
-          <img
-            src={yoCV}
-            alt="retrato de Gastón Langellotti"
-            loading="eager"
-          />
+          <picture>
+            <source srcSet={`${yoCV}.webp`} type="image/webp" />
+            <img
+              src={`${yoCV}.png`}
+              alt="retrato de Gastón Langellotti"
+              width={400}
+              height={400}
+              loading="eager"
+              decoding="async"
+            />
+          </picture>
         </figure>
         <figcaption>
           <h1>Gastón Langellotti</h1>
@@ -28,7 +34,18 @@ const Header = () => {
               Dedo.top
               <span className="logo-registered">®</span>
             </span>
-            <img src={dedoLogo} alt="" aria-hidden="true" />
+            <picture>
+              <source srcSet={`${dedoLogo}.webp`} type="image/webp" />
+              <img
+                src={`${dedoLogo}.png`}
+                alt=""
+                width={64}
+                height={64}
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </a>
           <p>
             Freelance. Construyo productos web de punta a punta: desde

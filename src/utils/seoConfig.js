@@ -1,16 +1,14 @@
 export const SEO_CONFIG = {
-  // Información básica
   siteName: "CV Gastón Langellotti",
   siteUrl: "https://langello.github.io/CV2/",
-  defaultImage: "/yoCV.png",
+  defaultImage: "/yoCV.webp",
   author: "Gastón Langellotti",
   language: "es",
-  
-  // Meta tags por defecto
-  defaultTitle: "Gastón Langellotti - Desarrollador Web Full Stack | CV Profesional",
-  defaultDescription: "Desarrollador Full Stack con Angular, Node.js, Express y MongoDB. Productos web de punta a punta: consumo colaborativo, datos en tiempo real, pagos y gestión de eventos.",
-  
-  // Keywords principales
+
+  defaultTitle: "Gastón Langellotti - Desarrollador Full Stack | CV",
+  defaultDescription:
+    "Desarrollador Full Stack con Angular, Node.js, Express y MongoDB. Productos web de punta a punta: CompraViva, MetOcean, Dedo.top® y más.",
+
   keywords: [
     "desarrollador web",
     "full stack",
@@ -19,69 +17,57 @@ export const SEO_CONFIG = {
     "angular",
     "typescript",
     "javascript",
-    "mysql",
     "mongodb",
-    "vercel",
-    "railway",
+    "mysql",
     "gastón langellotti",
     "cv",
-    "curriculum vitae",
-    "programador",
-    "desarrollador frontend",
-    "desarrollador backend",
-    "desarrollo web argentina",
     "freelancer",
-    "desarrollador freelance",
     "compraviva",
-    "dedo.top"
+    "dedo.top",
   ],
-  
-  // Información de contacto
+
   contact: {
     email: "gastonchavo@gmail.com",
     phone: "+541140277885",
     location: "Córdoba, Argentina",
     linkedin: "https://www.linkedin.com/in/gastonlangellotti",
-    github: "https://www.github.com/langello"
+    github: "https://www.github.com/langello",
   },
-  
-  // Redes sociales
+
   social: {
     linkedin: "https://www.linkedin.com/in/gastonlangellotti",
     github: "https://www.github.com/langello",
-    whatsapp: "https://api.whatsapp.com/send/?phone=541140277885"
+    whatsapp: "https://api.whatsapp.com/send/?phone=541140277885",
   },
-  
-  // Empresas donde trabaja
+
   companies: [
     {
       name: "CompraViva",
       url: "https://www.compraviva.ar",
-      description: "Plataforma de consumo colaborativo"
+      description: "Plataforma de consumo colaborativo",
     },
     {
       name: "MetOcean",
       url: "http://www.puertoquequenmetocean.com",
-      description: "Sistema meteorológico en tiempo real"
+      description: "Sistema meteorológico en tiempo real",
     },
     {
       name: "Dedo.top®",
       url: "https://www.dedo.top",
-      description: "Viajes compartidos, QR y check-in"
+      description: "Viajes compartidos, QR y check-in",
     },
     {
       name: "El Chañar",
       url: "https://www.chaniar.com.ar",
-      description: "Apart y cabañas en Villa General Belgrano"
+      description: "Apart y cabañas en Villa General Belgrano",
     },
     {
       name: "Groween",
       url: "https://groween-web.vercel.app/",
-      description: "Plataforma de renta de ropa infantil"
-    }
+      description: "Plataforma de renta de ropa infantil",
+    },
   ],
-  
-  // Habilidades técnicas
+
   skills: [
     "Angular",
     "Node.js",
@@ -94,8 +80,8 @@ export const SEO_CONFIG = {
     "GitHub",
     "Figma",
     "Vercel",
-    "Railway"
-  ]
+    "Railway",
+  ],
 };
 
 export default SEO_CONFIG;

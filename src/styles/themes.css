@@ -59,7 +59,13 @@
   height: 30px;
   border-radius: 15px;
   position: relative;
+  display: block;
+  background-color: #e2e8f0;
   transition: background-color 0.3s ease;
+}
+
+.theme-toggle__track.is-dark {
+  background-color: #1e293b;
 }
 
 .theme-toggle__thumb {
@@ -69,12 +75,18 @@
   position: absolute;
   top: 2px;
   left: 2px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 4px var(--color-shadow);
   overflow: hidden;
+  background-color: #ffffff;
+}
+
+.theme-toggle__track.is-dark .theme-toggle__thumb {
+  transform: translateX(24px);
+  background-color: #fbbf24;
 }
 
 .theme-toggle__icon {

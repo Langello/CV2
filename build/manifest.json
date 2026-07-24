@@ -1,7 +1,7 @@
 {
-  "short_name": "CV Gastón Langellotti",
-  "name": "CV Gastón Langellotti - Desarrollador Web Full Stack",
-  "description": "Curriculum Vitae profesional de Gastón Langellotti, Desarrollador Web Full Stack especializado en React, Node.js, Angular y TypeScript.",
+  "short_name": "CV Gastón",
+  "name": "CV Gastón Langellotti - Desarrollador Full Stack",
+  "description": "Curriculum Vitae de Gastón Langellotti, Desarrollador Full Stack.",
   "icons": [
     {
       "src": "contento.ico",
@@ -10,31 +10,16 @@
     },
     {
       "src": "yoCV.png",
-      "sizes": "192x192",
+      "sizes": "400x400",
       "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "yoCV.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ],
   "start_url": "/CV2/",
   "scope": "/CV2/",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "theme_color": "#000000",
+  "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "lang": "es",
-  "categories": ["business", "productivity", "utilities"],
-  "screenshots": [
-    {
-      "src": "yoCV.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide"
-    }
-  ]
+  "lang": "es"
 }

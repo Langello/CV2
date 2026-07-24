@@ -1,23 +1,20 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
+/** Unregisters legacy/broken SW from older deploys; no new SW registration. */
 export const useServiceWorker = () => {
   useEffect(() => {
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .then((registration) => {
-            console.log('SW registrado exitosamente: ', registration.scope);
-            
-            // Verificar actualizaciones cada 60 segundos
-            setInterval(() => {
-              registration.update();
-            }, 60000);
-          })
-          .catch((registrationError) => {
-            console.log('SW falló al registrarse: ', registrationError);
-          });
-      });
+    if (!("serviceWorker" in navigator)) {
+      return;
     }
+
+    navigator.serviceWorker
+      .getRegistrations()
+      .then((registrations) => {
+        registrations.forEach((registration) => registration.unregister());
+      })
+      .catch(() => {
+        /* ignore */
+      });
   }, []);
 };
 
