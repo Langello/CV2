@@ -1,0 +1,29 @@
+# Gastón Langellotti — CV
+
+> Curriculum vitae online de Gastón Langellotti, desarrollador Full Stack freelance (Angular, Node.js, Express, MongoDB). Fundador de Dedo.top®.
+
+## Perfil
+
+- [CV principal](https://cv.dedo.top/): Página del curriculum con experiencia, educación, idiomas y habilidades.
+- [Foto de perfil](https://cv.dedo.top/yoCV.webp): Imagen de perfil en WebP.
+
+## Proyectos y productos
+
+- [CompraViva](https://www.compraviva.ar/): Plataforma de consumo colaborativo; rol de desarrollador Full Stack principal.
+- [MetOcean — Puerto Quequén](http://www.puertoquequenmetocean.com/): Datos meteorológicos en tiempo real (olas, viento, marea).
+- [Dedo.top®](https://www.dedo.top/): Ecosistema propio: viajes compartidos, entradas QR y check-in.
+- [El Chañar](https://www.chaniar.com.ar/): Web de apart/cabañas en Villa General Belgrano (desarrollo y mantenimiento).
+- [Groween](https://groween-web.vercel.app/): Plataforma de renta de ropa infantil (proyecto 2024–2025).
+
+## Contacto
+
+- [LinkedIn](https://www.linkedin.com/in/gastonlangellotti): Perfil profesional.
+- [GitHub](https://www.github.com/langello): Repositorios de código.
+- [Email](mailto:gastonchavo@gmail.com): gastonchavo@gmail.com
+- [WhatsApp](https://api.whatsapp.com/send/?phone=541140277885): +54 11 4027 7885
+
+## Optional
+
+- [Manifest PWA](https://cv.dedo.top/manifest.json): Metadatos de instalación / PWA.
+- [robots.txt](https://cv.dedo.top/robots.txt): Reglas de rastreo.
+- [sitemap.xml](https://cv.dedo.top/sitemap.xml): Mapa del sitio.
