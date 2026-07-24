@@ -29,6 +29,10 @@ const SEO = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={fullImageUrl} />
+      <meta property="og:image:secure_url" content={fullImageUrl} />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="400" />
+      <meta property="og:image:height" content="312" />
       <meta property="og:image:alt" content="Foto de perfil de Gastón Langellotti" />
       <meta property="og:url" content={url} />
       <meta property="og:type" content={type} />
